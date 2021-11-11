@@ -1,5 +1,7 @@
-<div class="header">Make some stickies!</div>
-<body>
+<div class="header">
+    <img src="header_party.png">
+</div>
+
 <div class="bulletin">
     <% @all_stickies.each do | entry | %>
         <div class="sticky_note">
@@ -21,28 +23,21 @@
 </div>
 
 <div class= "space">
-    <div class="pens"></div>
+    
 </div>
 
 <div class="desk"> 
     <form method= "post" action= "/save">
 
-
-        
-        
-        
-        
         <div>
             <input class= "notepad" id="myInput" placeholder="Some text.." value="" name = "body">
-            
         </div>
-
 
         <input type="hidden" name="authenticity_token" id="authenticity_token" value="<%= form_authenticity_token %>">
 
     </form>
 </div>
-</body>
+
 
 <script>
 var input = document.getElementById("myInput");
