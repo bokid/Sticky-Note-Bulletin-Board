@@ -13,5 +13,12 @@ class StickiesController < ApplicationController
     redirect_to "/"
   end
 
+  def destroy
+    @sticky = Sticky.find(params[:id])
+    @sticky.destroy
+
+    redirect_to "/"
+  end
+
 end
 

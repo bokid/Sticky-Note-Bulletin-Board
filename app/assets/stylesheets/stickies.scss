@@ -4,21 +4,39 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-around;
     
-    
+    border: solid black 5px;
+    background-image: url(asset_path('images/bulletin.png'));
 }
 .sticky_note{
     width: 150px;
     height: 150px;
+    
+    background-color:rgb(246, 246, 180);
+    border: solid black 2px;
+    box-shadow: 5px 10px #888888;
+    border-radius: 5%;
+    margin: 10px;
+}
+.content{
+    width:80%;
+    height:80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:rgb(246, 246, 180);
-    border: solid black 2px;
-    box-shadow: 5px 10px;
-    border-radius: 5%;
-    margin: 10px;
+    align-self: center;
+    justify-self: center;
+    margin: 10%;
+    
+}
+.delete_button{
+    width: 10%;
+    height: 10%;
+    display: flex;
+    align-self: flex-start;
+    justify-self: flex-start;
+    border: solid red 2px;
 
-
+    
+    background-color: maroon;
 }
