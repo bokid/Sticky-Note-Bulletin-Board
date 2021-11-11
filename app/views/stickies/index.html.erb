@@ -3,19 +3,21 @@
 <div class="bulletin">
     <% @all_stickies.each do | entry | %>
         <div class="sticky_note">
-        <div>
-            <form method= "post" action= "/delete/<%=entry.id%> ">
-                <button class="delete_button" type="submit">X</button>
+            <div>
+                <form method= "post" action= "/delete/<%=entry.id%> ">
+                    <button type="submit">X</button>
 
-                <input type="hidden" name="authenticity_token" id="authenticity_token" value="<%= form_authenticity_token %>">
+                    <input type="hidden" name="authenticity_token" id="authenticity_token" value="<%= form_authenticity_token %>">
 
-            </form>
-        </div>
+                </form>
+            </div>
+
             <div class="content">
-                    <%= entry.body %>
-                </div>
+                <%= entry.body %>
+            </div>
+
         </div>
-    <% end %>
+    <% end %> 
 </div>
 
 <div class="note_pad"> 

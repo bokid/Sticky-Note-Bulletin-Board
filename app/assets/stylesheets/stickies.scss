@@ -11,12 +11,15 @@
 .sticky_note{
     width: 150px;
     height: 150px;
-    
+    word-break: break-all;
     background-color:rgb(246, 246, 180);
     border: solid black 2px;
     box-shadow: 5px 10px #888888;
     border-radius: 5%;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+
 }
 .content{
     width:80%;
@@ -26,17 +29,24 @@
     align-items: center;
     align-self: center;
     justify-self: center;
-    margin: 10%;
+    overflow: auto;
     
 }
-.delete_button{
+.sticky_note button{
     width: 10%;
     height: 10%;
     display: flex;
-    align-self: flex-start;
-    justify-self: flex-start;
-    border: solid red 2px;
+    float: right;
+    border: solid maroon 2px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 15%;
+    background-color: red;
+    opacity: .2;
+}
 
-    
-    background-color: maroon;
+.sticky_note button:hover{
+    opacity: 1;
+
 }
