@@ -5,8 +5,8 @@ Im in the first div!
 </div>
 
 <div> 
-    <form>
-    
+    <form method= "post" action= "/save">
+
         <div>
             <label> Title:</label>
             <input type="text" name="title"> 
@@ -21,5 +21,7 @@ Im in the first div!
             <button type="submit">Save!</button>
         </div>
 
+        <input type="hidden" name="authenticity_token" id="authenticity_token" value="<%= form_authenticity_token %>">
+        
     </form>
 </div>

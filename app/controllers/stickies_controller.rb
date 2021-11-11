@@ -1,6 +1,6 @@
 class StickiesController < ApplicationController
   def index
-    @all_stickies = Stickies.all
+    @all_stickies = Sticky.all
   end
 
   def create
