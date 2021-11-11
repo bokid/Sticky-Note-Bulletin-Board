@@ -1,10 +1,14 @@
 <h1>Make some stickies!</h1>
-
-<div>
-Im in the first div!
+<body>
+<div class="bulletin">
+    <% @all_stickies.each do | entry | %>
+        <div class="sticky_note">
+            <%= entry.body %>
+        </div>
+    <% end %>
 </div>
 
-<div> 
+<div class="note_pad"> 
     <form method= "post" action= "/save">
 
         <div>
@@ -22,6 +26,7 @@ Im in the first div!
         </div>
 
         <input type="hidden" name="authenticity_token" id="authenticity_token" value="<%= form_authenticity_token %>">
-        
+
     </form>
 </div>
+</body>

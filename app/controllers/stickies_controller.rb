@@ -9,6 +9,8 @@ class StickiesController < ApplicationController
     new_sticky.body = params["body"]
 
     new_sticky.save
+
+    redirect_to "/"
   end
 
 end
