@@ -1,4 +1,4 @@
-<h1>Make some stickies!</h1>
+<div class="header">Make some stickies!</div>
 <body>
 <div class="bulletin">
     <% @all_stickies.each do | entry | %>
@@ -20,7 +20,11 @@
     <% end %> 
 </div>
 
-<div class="note_pad"> 
+<div class= "space">
+    <div class="pens"></div>
+</div>
+
+<div class="desk"> 
     <form method= "post" action= "/save">
 
         <%# <div>
@@ -29,8 +33,7 @@
         </div> %>
 
         <div>
-            <label> Body:</label>
-            <textarea id="contents" name="body"> </textarea>
+            <textarea class= "notepad" id="contents" name="body"> </textarea>
         </div>
 
         <div>

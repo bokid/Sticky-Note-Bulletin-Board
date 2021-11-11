@@ -1,12 +1,47 @@
+.header{
+    display:flex;
+    justify-content: center;
+}
+.space{
+    width:auto;
+    height: 200px;
+    background-color: white;
+}
+.pens{
+    width: auto;
+    height: 100%;
+    // background-image: url(pens.png);
+    // background-size: cover;
+    border: solid black 2px;
+}
+
 .bulletin{
     width: 98%;
     height: 40%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    
     border: solid black 5px;
     background-image: url(bulletin.png);
+}
+.desk {
+    width: 100vw;
+    height: 40vh;
+    background-image: url(desk.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    
+}
+.notepad {
+    width: 200px;
+    height: 200px;
+    background-color:rgb(246, 246, 180);
+    border: solid black 2px;
+    box-shadow: 2px 5px #888888;
+    border-radius: 5%;
+    transform:perspective(200px) rotateX(30deg);
+    font-size:x-large;
 }
 .sticky_note{
     width: 150px;
